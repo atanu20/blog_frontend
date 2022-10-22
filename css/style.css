@@ -11,6 +11,10 @@ p{
 .dis__cla{
   line-height: 21px !important;
 }
+h2{
+  margin-top: 24px;
+  
+}
 :root {
     --blue-color: #0074DF;
     --light-blue:  #E2F3FF;
@@ -56,7 +60,8 @@ p{
  .card{
   border: none;
   border-radius: 0;
-  box-shadow: 0px 2px 5px grey;
+  box-shadow: 0px 9px 29px rgba(0, 0, 0, 0.13);
+  border-radius: 19px;
  }
 .tb1{
   background-color: var(--light-blue);
@@ -105,8 +110,15 @@ p{
     
   }
   .blog__content__right ul li{
-    margin: 5px 0;
+    margin: 5px 0px 0px 0px;
     font-size: 18px;
+    
+  }
+  .bg-green ul.pl-4{
+    margin: 0;
+  }
+  .bg-red ul.pl-4{
+    margin: 0;
   }
   .blog__content__right ul li a{
     
@@ -201,12 +213,14 @@ margin: 10px;
 .addimg{
   width: 100%;
   height: 180px;
+  object-fit: contain;
 }
 .addimg1{
   width: 80%;
   height: 200px;
   display: block;
   margin: auto;
+  object-fit: contain;
 }
 
 .btn-sque{
@@ -260,7 +274,7 @@ margin: 10px;
 .smll_img{
   width: 75px;
   height: 75px;
-  object-fit: cover;
+  object-fit: contain;
   display: block;
   margin: auto;
 }
@@ -282,7 +296,7 @@ margin: 10px;
 .sm_img{
   width: 100%;
   height: 250px !important;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 
@@ -425,3 +439,12 @@ margin: 10px;
 .panel-title a{
     text-decoration: none;
 }
+
+.text__st{
+  font-size: 20px;
+  /* font-weight: 500; */
+  line-height: 1.5;
+}
+
+
+/* ; */
