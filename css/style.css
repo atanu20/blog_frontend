@@ -28,9 +28,11 @@ h2{
   }
   .bg-green{
     background-color: var(--green-color);
+    /* padding: 20px; */
   }
   .bg-red{
     background-color: var(--red-color);
+    /* padding: 20px; */
   }
   .fb-500{
     font-weight: 500;
@@ -105,11 +107,14 @@ h2{
     position: sticky !important;
     top:50px;    
   }
-  .blog__content__right ul{
+  .mobile_view{
+    display: none;
+  }
+  .blog__content__right ul , .mobile_view ul{
     list-style-type: none;
     
   }
-  .blog__content__right ul li{
+  .blog__content__right ul li , .mobile_view ul li{
     margin: 5px 0px 0px 0px;
     font-size: 18px;
     
@@ -120,7 +125,7 @@ h2{
   .bg-red ul.pl-4{
     margin: 0;
   }
-  .blog__content__right ul li a{
+  .blog__content__right ul li a , .mobile_view ul li a{
     
     
     color:#000000
@@ -324,16 +329,16 @@ margin: 10px;
     .blog__box{
       flex-direction: column-reverse;
     }
-    .blog__content__right{
-      
-      position:unset !important;
-         
-    }
+    
     .blog__content__left{
         width: 100%;
     }
-
+.mobile_view{
+  display: block;
+}
     .blog__content__right {
+      position:unset !important;
+      display: none;
         width: 100%;
     }
     .wrapper__box{
