@@ -58,7 +58,7 @@
 }
   .slider__blog1{
         width: 100%;
-        height:90vh;
+        height:80vh;
         background: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)),url("../image/blog1.png");
         background-position: center;
         background-size:cover;
@@ -77,7 +77,7 @@
     margin-top: 30px;
     width: 100%;
     display: flex;
-    
+  
     
 
   }
@@ -88,8 +88,26 @@
   }
   .blog__content__right{
     width: 30%;
-    background-color: #68747e;
+    /* background-color: #68747e; */
+    margin-top: 15px;
+    height: 500px;
+    position: sticky !important;
+    top:50px;    
   }
+  .blog__content__right ul{
+    list-style-type: none;
+    
+  }
+  .blog__content__right ul li{
+    margin: 5px 0;
+    font-size: 18px;
+  }
+  .blog__content__right ul li a{
+    
+    
+    color:#000000
+  }
+
   .blog__content__left .date__text{
     color:var(--light-black-color)
   }
@@ -248,11 +266,15 @@ margin: 10px;
   }
 
   @media (max-width:750px) {
+    .blog__box{
+      flex-direction: column;
+    }
     .blog__content__left{
         width: 100%;
     }
+
     .blog__content__right {
-        display: none;
+        width: 100%;
     }
     .wrapper__box{
       width: 100%;
@@ -267,89 +289,93 @@ margin: 10px;
       width: 100%;
      clear: both;
     }
+
+    .head_text{
+      font-size: 40px !important;
+    }
+    .blog__content__right{
+      height: auto;
+      margin-bottom: 50px;
+    }
     
   }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  #mainfaq {
-    margin: 30px 0;
+@media (max-width:400px) {
+  .written_box{
+    display: flex;
+  justify-content:left;
+  align-items:flex-start;
+  flex-direction: column;
   }
-  
-  #mainfaq #faq .card {
-    margin-bottom: 10px;
-    border: 0;
+  .head_text{
+    font-size: 30px !important;
   }
-  
-  #mainfaq #faq .card .card-header {
-    border: 0;
-    -webkit-box-shadow: 0 0 20px 0 rgba(213, 213, 213, 0.5);
-            box-shadow: 0 0 20px 0 rgba(213, 213, 213, 0.5);
-    border-radius: 2px;
-    padding: 0;
-  }
-  
-  #mainfaq #faq .card .card-header .btn-header-link {
-    color: #fff;
-    display: block;
-    text-align: left;
-    background: white;
-    color: #222;
-    padding: 20px;
-    outline: none !important;
-    box-shadow: none !important;
+}
 
-  }
-  .btn-header-link:focus{
-    outline: none !important;
-  }
-  
-  #mainfaq #faq .card .card-header .btn-header-link:after {
-    content: "\f107";
-    font-family: 'Font Awesome 5 Free';
-    font-weight: 900;
-    float: right;
-  }
-  
-  #mainfaq #faq .card .card-header .btn-header-link.collapsed {
-    background: white;
-    color: #000000;
-  }
-  
-  #mainfaq #faq .card .card-header .btn-header-link.collapsed:after {
-    content: "\f106";
-  }
-  
-  #mainfaq #faq .card .collapsing {
-    background: var(--light-blue);
-    line-height: 30px;
-  }
-  
-  #mainfaq #faq .card .collapse {
-    border: 0;
-  }
-  
-  #mainfaq #faq .card .collapse.show {
-    background: var(--light-blue);
-    line-height: 30px;
-    color: #222;
-  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .panel{
+    padding: 10px;
+    box-shadow: 0 2px 5px 0 rgba(110,130,218,0.18);
+}
+
+.panel-default > .panel-heading {
+  background-color: transparent;
+  border: medium none;
+  border-radius: 0;
+  color: inherit;
+  padding: 0;
+  position: relative;
+}    
+.panel-heading .panel-title > a {
+  /* background-color:#f74a61; */
+  border: medium none;
+  color: #000000;
+  display: block;
+  font-family: Arial,Helvetica,sans-serif;
+  line-height: 28px;
+  padding: 7px 25px 7px 7px;
+  font-size: 16px;
+  word-wrap: break-word;
+}
+    
+.panel-heading .panel-title > a::after {
+  bottom: 0;
+  content: "▲";
+  font-family: "Roboto",sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: -1px;
+  line-height: 48px;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: 0;
+  width: 33px;
+}  
+.panel-heading .panel-title > a.collapsed::after {
+  content: "▼";
+}    
+.panel-body{
+  height:auto;
+  background-color: var(--light-blue);
+}
+.panel-title a{
+    text-decoration: none;
+}
