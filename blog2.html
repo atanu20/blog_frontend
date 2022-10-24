@@ -127,6 +127,10 @@
         /* margin: 20px 5px; */
         display: block;
         margin: 20px auto;
+        display: none;
+      }
+      .product_card {
+        display: block;
       }
 
       .tb1 {
@@ -223,7 +227,8 @@
         margin-left: 29px !important;
       }
       h5 {
-        line-height: 42px;
+        line-height: 25px;
+        margin-bottom: 20px;
       }
       .fn-ln {
         line-height: 5px !important;
@@ -232,6 +237,7 @@
         position: absolute;
         right: -25px !important;
       }
+
       ::-webkit-scrollbar {
         width: 5px;
         height: 10px;
@@ -499,6 +505,10 @@
         line-height: 20px;
       }
 
+      .img_size {
+        object-fit: contain;
+      }
+
       @media (max-width: 1040px) {
         .blog__content__left .head_text {
           font-size: 55px;
@@ -566,6 +576,18 @@
         }
         .head_text {
           font-size: 30px !important;
+        }
+      }
+
+      @media (max-width: 1000px) {
+        .product_card {
+          display: none;
+        }
+        .card_width {
+          display: block;
+        }
+        .img_size {
+          object-fit: cover;
         }
       }
     </style>
@@ -764,8 +786,7 @@
                   <img
                     src="https://res.cloudinary.com/pigeon/image/upload/v1666499774/ice/3_llvelk.png"
                     alt=""
-                    class="blog2__smll_img"
-                    style="object-fit: contain"
+                    class="img_size blog2__smll_img"
                   />
                 </div>
                 <div class="col-lg-9 col-md-8 col-sm-8 col-9 mx-auto mb-2">
@@ -791,8 +812,7 @@
                   <img
                     src="https://res.cloudinary.com/pigeon/image/upload/v1666499774/ice/3_llvelk.png"
                     alt=""
-                    class="blog2__smll_img"
-                    style="object-fit: contain"
+                    class="img_size blog2__smll_img"
                   />
                 </div>
                 <div class="col-lg-9 col-md-8 col-sm-8 col-9 mx-auto mb-2">
@@ -820,8 +840,7 @@
                   <img
                     src="https://res.cloudinary.com/pigeon/image/upload/v1666499774/ice/3_llvelk.png"
                     alt=""
-                    class="blog2__smll_img"
-                    style="object-fit: contain"
+                    class="img_size blog2__smll_img"
                   />
                 </div>
                 <div class="col-lg-9 col-md-8 col-sm-8 col-9 mx-auto mb-2">
@@ -849,8 +868,7 @@
                   <img
                     src="https://res.cloudinary.com/pigeon/image/upload/v1666499774/ice/3_llvelk.png"
                     alt=""
-                    class="blog2__smll_img"
-                    style="object-fit: contain"
+                    class="img_size blog2__smll_img"
                   />
                 </div>
                 <div class="col-lg-9 col-md-8 col-sm-8 col-9 mx-auto mb-2">
@@ -879,8 +897,7 @@
                   <img
                     src="https://res.cloudinary.com/pigeon/image/upload/v1666499774/ice/3_llvelk.png"
                     alt=""
-                    class="blog2__smll_img"
-                    style="object-fit: contain"
+                    class="img_size blog2__smll_img"
                   />
                 </div>
                 <div class="col-lg-9 col-md-8 col-sm-8 col-9 mx-auto mb-2">
@@ -936,8 +953,7 @@
                 <img
                   src="https://res.cloudinary.com/pigeon/image/upload/v1666499774/ice/4_usomwd.png"
                   alt=""
-                  class="blog2__big_img"
-                  style="object-fit: contain"
+                  class="img_size blog2__big_img"
                 />
                 <br />
                 <br />
@@ -952,8 +968,7 @@
                 <img
                   src="https://res.cloudinary.com/pigeon/image/upload/v1666499774/ice/5_p9hwc1.png"
                   alt=""
-                  class="blog2__big_img"
-                  style="object-fit: contain"
+                  class="img_size blog2__big_img"
                 />
                 <br />
                 <br />
@@ -973,8 +988,7 @@
                 <img
                   src="https://res.cloudinary.com/pigeon/image/upload/v1666499774/ice/6_ik54ur.png"
                   alt=""
-                  class="blog2__big_img"
-                  style="object-fit: contain"
+                  class="img_size blog2__big_img"
                 />
                 <br /><br />
                 <p>
@@ -1001,8 +1015,7 @@
                 <img
                   src="https://res.cloudinary.com/pigeon/image/upload/v1666499773/ice/7_dke6fe.png"
                   alt=""
-                  class="blog2__big_img"
-                  style="object-fit: contain"
+                  class="img_size blog2__big_img"
                 />
                 <br /><br />
                 <p>
@@ -1066,11 +1079,11 @@
                 <img
                   src="https://res.cloudinary.com/pigeon/image/upload/v1666499773/ice/8_aqucjj.png"
                   alt=""
-                  class="blog2__big_img"
-                  style="object-fit: contain"
+                  class="img_size blog2__big_img"
+                  style="object-fit: cover"
                 />
-                <br /><br />
-                <p>
+
+                <p class="mt-4">
                   According to
                   <span class="text-primary"
                     >Susie Parr, author of The Story of Swimming,</span
@@ -1114,8 +1127,7 @@
                 <img
                   src="https://res.cloudinary.com/pigeon/image/upload/v1666499773/ice/9_zycnmt.png"
                   alt=""
-                  class="blog2__big_img"
-                  style="object-fit: contain"
+                  class="img_size blog2__big_img"
                 />
                 <br /><br />
                 <p>
@@ -1133,8 +1145,7 @@
                 <img
                   src="https://res.cloudinary.com/pigeon/image/upload/v1666499774/ice/10_fvt3dz.png"
                   alt=""
-                  class="blog2__big_img"
-                  style="object-fit: contain"
+                  class="img_size blog2__big_img"
                 />
                 <br /><br />
                 <p>
@@ -1149,8 +1160,7 @@
                 <img
                   src="https://res.cloudinary.com/pigeon/image/upload/v1666499773/ice/11_re9lpg.png"
                   alt=""
-                  class="blog2__big_img"
-                  style="object-fit: contain"
+                  class="img_size blog2__big_img"
                 />
                 <br /><br />
                 <p>
@@ -1171,8 +1181,7 @@
                 <img
                   src="https://res.cloudinary.com/pigeon/image/upload/v1666499773/ice/12_wtdlnb.png"
                   alt=""
-                  class="blog2__big_img"
-                  style="object-fit: contain"
+                  class="img_size blog2__big_img"
                 />
 
                 <br /><br />
@@ -1201,8 +1210,7 @@
                 <img
                   src="https://res.cloudinary.com/pigeon/image/upload/v1666499773/ice/13_xx4w4d.png"
                   alt=""
-                  class="blog2__big_img"
-                  style="object-fit: contain"
+                  class="img_size blog2__big_img"
                 />
                 <ul class="pl-4 mt-2 text-primary">
                   <li>Immune System</li>
@@ -1224,8 +1232,7 @@
                 <img
                   src="https://res.cloudinary.com/pigeon/image/upload/v1666499772/ice/14_g0reqj.png"
                   alt=""
-                  class="blog2__big_img"
-                  style="object-fit: contain"
+                  class="img_size blog2__big_img"
                 />
                 <br /><br />
                 <p>
@@ -1277,8 +1284,7 @@
               <img
                 src="https://res.cloudinary.com/pigeon/image/upload/v1666499772/ice/15_hicwxd.png"
                 alt=""
-                class="blog2__big_img"
-                style="object-fit: contain"
+                class="img_size blog2__big_img"
               />
               <br /><br />
               <p>
@@ -1330,8 +1336,7 @@
               <img
                 src="https://res.cloudinary.com/pigeon/image/upload/v1666499772/ice/16_npcswk.png"
                 alt=""
-                class="blog2__big_img"
-                style="object-fit: contain"
+                class="img_size blog2__big_img"
               />
 
               <br />
@@ -1452,8 +1457,7 @@
               <img
                 src="https://res.cloudinary.com/pigeon/image/upload/v1666499772/ice/18_s2fuph.png"
                 alt=""
-                class="blog2__big_img"
-                style="object-fit: contain"
+                class="img_size blog2__big_img"
               />
               <br /><br />
               <p>
@@ -1509,8 +1513,7 @@
               <img
                 src="https://res.cloudinary.com/pigeon/image/upload/v1666499772/ice/19_dabckx.png"
                 alt=""
-                class="blog2__big_img"
-                style="object-fit: contain"
+                class="img_size blog2__big_img"
               />
               <br /><br />
 
@@ -1542,8 +1545,7 @@
               <img
                 src="https://res.cloudinary.com/pigeon/image/upload/v1666499772/ice/20_ublccf.png"
                 alt=""
-                class="blog2__big_img"
-                style="object-fit: contain"
+                class="img_size blog2__big_img"
               />
               <br /><br />
               <p>Here are other possible benefits of using a cold plunge:</p>
@@ -1576,8 +1578,7 @@
               <img
                 src="https://res.cloudinary.com/pigeon/image/upload/v1666499772/ice/21_vmdhkp.png"
                 alt=""
-                class="blog2__big_img"
-                style="object-fit: contain"
+                class="img_size blog2__big_img"
               />
               <br /><br />
               <p>
@@ -1766,61 +1767,43 @@
                 >
               </h4>
 
-              <!-- <div class="row">
-                <div class="col-lg-5 col-md-7 col-12 mx-auto">
+              <div class="row mt-4 mb-4 product_card">
+                <div class="col-sm-10 col-12 mx-auto">
                   <div class="card p-2">
-                    <img
-                      src="https://res.cloudinary.com/pigeon/image/upload/v1666499771/ice/22_dkwekz.png"
-                      alt=""
-                      class="addimg1"
-                      style="object-fit: contain"
-                    />
-                    <div class="p-2">
-                      <h3 class="fb-600 text__st">
-                        Best Cold Plunge Tub Overall: BlueCube Mini Me
-                      </h3>
-                      <div>
-                        <h2 class="fn-20 m-0" sty>$15,999.99</h2>
-                        <div class="mt-1">
-                          <a href="" class="btn btn-sque">Buy Now</a>
-                          <a href="" class="btn btn-outline-sque">Share</a>
-                        </div>
-                      </div>
-                    </div>
-
                     <div class="row">
                       <div class="col-lg-4 col-md-12 mb-2">
                         <img
                           src="https://res.cloudinary.com/pigeon/image/upload/v1666499771/ice/22_dkwekz.png"
                           alt=""
-                          class="addimg1"
-                          style="object-fit: contain"
+                          class="img_size addimg1"
                         />
                       </div>
                       <div class="col-lg-8 col-md-12">
-                        <h3 class="fb-600 text__st m-0 pt-2">
+                        <h3
+                          class="fb-600 text__st pt-3"
+                          style="margin-bottom: -15px"
+                        >
                           Best Cold Plunge Tub Overall: BlueCube Mini Me
                         </h3>
                         <div>
-                          <h2 class="m-0">$15,999.99</h2>
+                          <h2 class="">$15,999.99</h2>
                           <div>
                             <a href="" class="btn btn-sque">Buy Now</a>
                             <a href="" class="btn btn-outline-sque">Share</a>
                           </div>
                         </div>
                       </div>
-                    </div> 
+                    </div>
                   </div>
                 </div>
-              </div> -->
+              </div>
 
               <div class="card_width">
                 <div class="card p-2">
                   <img
                     src="https://res.cloudinary.com/pigeon/image/upload/v1666499771/ice/22_dkwekz.png"
                     alt=""
-                    class="addimg1"
-                    style="object-fit: contain"
+                    class="img_size addimg1"
                   />
                   <div class="p-2">
                     <h3 class="fb-600 text__st">
@@ -1894,8 +1877,7 @@
               <img
                 src="https://res.cloudinary.com/pigeon/image/upload/v1666499771/ice/23_wgbajh.png"
                 alt=""
-                class="blog2__big_img"
-                style="object-fit: contain"
+                class="img_size blog2__big_img"
               />
               <p>
                 It’s crafted out of real hickory, padauk, and wenge, with a
@@ -1929,8 +1911,7 @@
                   <img
                     src="https://res.cloudinary.com/pigeon/image/upload/v1666499774/ice/3_llvelk.png"
                     alt=""
-                    class="blog2__smll_img"
-                    style="object-fit: contain"
+                    class="img_size blog2__smll_img"
                   />
                 </div>
                 <div class="col-lg-9 col-md-8 col-sm-8 col-9 mx-auto mb-2">
@@ -1956,8 +1937,7 @@
                   <img
                     src="https://res.cloudinary.com/pigeon/image/upload/v1666499774/ice/3_llvelk.png"
                     alt=""
-                    class="blog2__smll_img"
-                    style="object-fit: contain"
+                    class="img_size blog2__smll_img"
                   />
                 </div>
                 <div class="col-lg-9 col-md-8 col-sm-8 col-9 mx-auto mb-2">
@@ -1985,8 +1965,7 @@
                   <img
                     src="https://res.cloudinary.com/pigeon/image/upload/v1666499774/ice/3_llvelk.png"
                     alt=""
-                    class="blog2__smll_img"
-                    style="object-fit: contain"
+                    class="img_size blog2__smll_img"
                   />
                 </div>
                 <div class="col-lg-9 col-md-8 col-sm-8 col-9 mx-auto mb-2">
@@ -2014,8 +1993,7 @@
                   <img
                     src="https://res.cloudinary.com/pigeon/image/upload/v1666499774/ice/3_llvelk.png"
                     alt=""
-                    class="blog2__smll_img"
-                    style="object-fit: contain"
+                    class="img_size blog2__smll_img"
                   />
                 </div>
                 <div class="col-lg-9 col-md-8 col-sm-8 col-9 mx-auto mb-2">
@@ -2044,8 +2022,7 @@
                   <img
                     src="https://res.cloudinary.com/pigeon/image/upload/v1666499774/ice/3_llvelk.png"
                     alt=""
-                    class="blog2__smll_img"
-                    style="object-fit: contain"
+                    class="img_size blog2__smll_img"
                   />
                 </div>
                 <div class="col-lg-9 col-md-8 col-sm-8 col-9 mx-auto mb-2">
@@ -2083,8 +2060,7 @@
                   <img
                     src="https://res.cloudinary.com/pigeon/image/upload/v1666499771/ice/24_tptehc.png"
                     alt=""
-                    class="addimg1"
-                    style="object-fit: contain"
+                    class="img_size addimg1"
                   />
                   <div class="p-2">
                     <h3 class="fb-600 text__st">
@@ -2103,8 +2079,7 @@
                 </div>
               </div>
 
-              <!-- <br />
-              <div class="row">
+              <div class="row mt-4 mb-4 product_card">
                 <div class="col-sm-10 col-12 mx-auto">
                   <div class="card p-2">
                     <div class="row">
@@ -2112,16 +2087,18 @@
                         <img
                           src="https://res.cloudinary.com/pigeon/image/upload/v1666499771/ice/24_tptehc.png"
                           alt=""
-                          class="addimg1"
-                          style="object-fit: contain"
+                          class="img_size addimg1"
                         />
                       </div>
                       <div class="col-lg-8 col-md-12">
-                        <h3 class="fb-600 text__st m-0 pt-2">
+                        <h3
+                          class="fb-600 text__st pt-4"
+                          style="margin-bottom: -15px"
+                        >
                           Best Cold Plunge Tub Overall: BlueCube Mini Me
                         </h3>
                         <div>
-                          <h2 class="m-0">$5,490.00</h2>
+                          <h2 class="">$5,490.00</h2>
                           <div>
                             <a href="" class="btn btn-sque">Buy Now</a>
                             <a href="" class="btn btn-outline-sque">Share</a>
@@ -2132,7 +2109,6 @@
                   </div>
                 </div>
               </div>
-              <br /> -->
 
               <p>
                 This iceless tub consistently has the best ratings and reviews
@@ -2210,8 +2186,8 @@
                   >Best ice bath tub on a budget: Ice Barrel</span
                 >
               </h4>
-              <!-- <br />
-              <div class="row">
+
+              <div class="row mt-4 mb-4 product_card">
                 <div class="col-sm-10 col-12 mx-auto">
                   <div class="card p-2">
                     <div class="row">
@@ -2219,14 +2195,18 @@
                         <img
                           src="https://res.cloudinary.com/pigeon/image/upload/v1666499771/ice/25_vlti7j.png"
                           alt=""
-                          class="addimg1"
-                          style="object-fit: contain"
+                          class="img_size addimg1"
                         />
                       </div>
                       <div class="col-lg-8 col-md-12">
-                        <h3 class="fb-600 text__st m-0 pt-2">Ice Barrel</h3>
+                        <h3
+                          class="fb-600 text__st pt-4"
+                          style="margin-bottom: -15px"
+                        >
+                          Ice Barrel
+                        </h3>
                         <div>
-                          <h2 class="m-0">$1199.97</h2>
+                          <h2 class="">$1199.97</h2>
                           <div>
                             <a href="" class="btn btn-sque">Buy Now</a>
                             <a href="" class="btn btn-outline-sque">Share</a>
@@ -2237,15 +2217,13 @@
                   </div>
                 </div>
               </div>
-              <br /> -->
 
               <div class="card_width">
                 <div class="card p-2">
                   <img
                     src="https://res.cloudinary.com/pigeon/image/upload/v1666499771/ice/25_vlti7j.png"
                     alt=""
-                    class="addimg1"
-                    style="object-fit: contain"
+                    class="img_size addimg1"
                   />
                   <div class="p-2">
                     <h3 class="fb-600 text__st">Ice Barrel</h3>
@@ -2303,8 +2281,7 @@
                   <img
                     src="https://res.cloudinary.com/pigeon/image/upload/v1666499774/ice/3_llvelk.png"
                     alt=""
-                    class="blog2__smll_img"
-                    style="object-fit: contain"
+                    class="img_size blog2__smll_img"
                   />
                 </div>
                 <div class="col-lg-9 col-md-8 col-sm-8 col-9 mx-auto mb-2">
@@ -2330,8 +2307,7 @@
                   <img
                     src="https://res.cloudinary.com/pigeon/image/upload/v1666499774/ice/3_llvelk.png"
                     alt=""
-                    class="blog2__smll_img"
-                    style="object-fit: contain"
+                    class="img_size blog2__smll_img"
                   />
                 </div>
                 <div class="col-lg-9 col-md-8 col-sm-8 col-9 mx-auto mb-2">
@@ -2359,8 +2335,7 @@
                   <img
                     src="https://res.cloudinary.com/pigeon/image/upload/v1666499774/ice/3_llvelk.png"
                     alt=""
-                    class="blog2__smll_img"
-                    style="object-fit: contain"
+                    class="img_size blog2__smll_img"
                   />
                 </div>
                 <div class="col-lg-9 col-md-8 col-sm-8 col-9 mx-auto mb-2">
@@ -2388,8 +2363,7 @@
                   <img
                     src="https://res.cloudinary.com/pigeon/image/upload/v1666499774/ice/3_llvelk.png"
                     alt=""
-                    class="blog2__smll_img"
-                    style="object-fit: contain"
+                    class="img_size blog2__smll_img"
                   />
                 </div>
                 <div class="col-lg-9 col-md-8 col-sm-8 col-9 mx-auto mb-2">
@@ -2418,8 +2392,7 @@
                   <img
                     src="https://res.cloudinary.com/pigeon/image/upload/v1666499774/ice/3_llvelk.png"
                     alt=""
-                    class="blog2__smll_img"
-                    style="object-fit: contain"
+                    class="img_size blog2__smll_img"
                   />
                 </div>
                 <div class="col-lg-9 col-md-8 col-sm-8 col-9 mx-auto mb-2">
@@ -2484,8 +2457,7 @@
                   <img
                     src="https://res.cloudinary.com/pigeon/image/upload/v1666499771/ice/26_zrya3p.png"
                     alt=""
-                    class="addimg1"
-                    style="object-fit: contain"
+                    class="img_size addimg1"
                   />
                   <div class="p-2">
                     <h3 class="fb-600 text__st">Morozko Forge</h3>
@@ -2502,8 +2474,7 @@
                 </div>
               </div>
 
-              <!-- <br />
-              <div class="row">
+              <div class="row mb-4 mt-4 product_card">
                 <div class="col-sm-10 col-12 mx-auto">
                   <div class="card p-2">
                     <div class="row">
@@ -2511,14 +2482,18 @@
                         <img
                           src="https://res.cloudinary.com/pigeon/image/upload/v1666499771/ice/26_zrya3p.png"
                           alt=""
-                          class="addimg1"
-                          style="object-fit: contain"
+                          class="img_size addimg1"
                         />
                       </div>
                       <div class="col-lg-8 col-md-12">
-                        <h3 class="fb-600 text__st m-0 pt-2">Morozko Forge</h3>
+                        <h3
+                          class="fb-600 text__st pt-4"
+                          style="margin-bottom: -15px"
+                        >
+                          Morozko Forge
+                        </h3>
                         <div>
-                          <h2 class="m-0">$12,850</h2>
+                          <h2 class="">$12,850</h2>
                           <div>
                             <a href="" class="btn btn-sque">Buy Now</a>
                             <a href="" class="btn btn-outline-sque">Share</a>
@@ -2529,7 +2504,7 @@
                   </div>
                 </div>
               </div>
-              <br /> -->
+
               <p>
                 As seen on Joe Rogan’s social media, the Morozko Forge is the
                 world’s only cold plunge to create its own ice and put you in
@@ -2608,8 +2583,7 @@
                   <img
                     src="https://res.cloudinary.com/pigeon/image/upload/v1666499771/ice/27_rcww6t.png"
                     alt=""
-                    class="addimg1"
-                    style="object-fit: contain"
+                    class="img_size addimg1"
                   />
                   <div class="p-2">
                     <h3 class="fb-600 text__st">Renu Therapy Ice Bath Tub</h3>
@@ -2626,8 +2600,7 @@
                 </div>
               </div>
 
-              <!-- <br />
-              <div class="row">
+              <div class="row mb-4 mt-4 product_card">
                 <div class="col-sm-10 col-12 mx-auto">
                   <div class="card p-2">
                     <div class="row">
@@ -2635,16 +2608,18 @@
                         <img
                           src="https://res.cloudinary.com/pigeon/image/upload/v1666499771/ice/27_rcww6t.png"
                           alt=""
-                          class="addimg1"
-                          style="object-fit: contain"
+                          class="img_size addimg1"
                         />
                       </div>
                       <div class="col-lg-8 col-md-12">
-                        <h3 class="fb-600 text__st m-0 pt-2">
+                        <h3
+                          class="fb-600 text__st pt-4"
+                          style="margin-bottom: -15px"
+                        >
                           Renu Therapy Ice Bath Tub
                         </h3>
                         <div>
-                          <h2 class="m-0">$9,699.99 / $13,399.99</h2>
+                          <h2 class="">$9,699.99 / $13,399.99</h2>
                           <div>
                             <a href="" class="btn btn-sque">Buy Now</a>
                             <a href="" class="btn btn-outline-sque">Share</a>
@@ -2655,7 +2630,7 @@
                   </div>
                 </div>
               </div>
-              <br /> -->
+
               <p>
                 If you want premium quality, safety, and performance, the Cold
                 Stoic by Renu Therapy is your cold plunge.
@@ -2773,8 +2748,7 @@
                         <img
                           src="https://res.cloudinary.com/pigeon/image/upload/v1666499771/ice/22_dkwekz.png"
                           alt=""
-                          class="smll_img_part"
-                          style="object-fit: contain"
+                          class="img_size smll_img_part"
                         />
                         <div class="table_p">
                           <p>Blue Cube Mini-Me Cold Plunge</p>
@@ -2784,8 +2758,7 @@
                         <img
                           src="https://res.cloudinary.com/pigeon/image/upload/v1666499771/ice/24_tptehc.png"
                           alt=""
-                          class="smll_img_part"
-                          style="object-fit: contain"
+                          class="img_size smll_img_part"
                         />
                         <div class="table_p">
                           <p>The Cold Plunge: Hot & Cold</p>
@@ -2795,8 +2768,7 @@
                         <img
                           src="https://res.cloudinary.com/pigeon/image/upload/v1666499771/ice/25_vlti7j.png"
                           alt=""
-                          class="smll_img_part"
-                          style="object-fit: contain"
+                          class="img_size smll_img_part"
                         />
                         <div class="table_p">
                           <p>Ice Barrel</p>
@@ -2806,8 +2778,7 @@
                         <img
                           src="https://res.cloudinary.com/pigeon/image/upload/v1666499771/ice/26_zrya3p.png"
                           alt=""
-                          class="smll_img_part"
-                          style="object-fit: contain"
+                          class="img_size smll_img_part"
                         />
                         <div class="table_p">
                           <p>Morozko Forge</p>
@@ -2817,8 +2788,7 @@
                         <img
                           src="https://res.cloudinary.com/pigeon/image/upload/v1666499771/ice/27_rcww6t.png"
                           alt=""
-                          class="smll_img_part"
-                          style="object-fit: contain"
+                          class="img_size smll_img_part"
                         />
                         <div class="table_p">
                           <p>Renu Therapy Cold Stoic & Siberian Cold Plunge</p>
@@ -3117,8 +3087,7 @@
                   <img
                     src="https://res.cloudinary.com/pigeon/image/upload/v1666499774/ice/3_llvelk.png"
                     alt=""
-                    class="blog2__smll_img"
-                    style="object-fit: contain"
+                    class="img_size blog2__smll_img"
                   />
                 </div>
                 <div class="col-lg-9 col-md-8 col-sm-8 col-9 mx-auto mb-2">
@@ -3144,8 +3113,7 @@
                   <img
                     src="https://res.cloudinary.com/pigeon/image/upload/v1666499774/ice/3_llvelk.png"
                     alt=""
-                    class="blog2__smll_img"
-                    style="object-fit: contain"
+                    class="img_size blog2__smll_img"
                   />
                 </div>
                 <div class="col-lg-9 col-md-8 col-sm-8 col-9 mx-auto mb-2">
@@ -3173,8 +3141,7 @@
                   <img
                     src="https://res.cloudinary.com/pigeon/image/upload/v1666499774/ice/3_llvelk.png"
                     alt=""
-                    class="blog2__smll_img"
-                    style="object-fit: contain"
+                    class="img_size blog2__smll_img"
                   />
                 </div>
                 <div class="col-lg-9 col-md-8 col-sm-8 col-9 mx-auto mb-2">
@@ -3202,8 +3169,7 @@
                   <img
                     src="https://res.cloudinary.com/pigeon/image/upload/v1666499774/ice/3_llvelk.png"
                     alt=""
-                    class="blog2__smll_img"
-                    style="object-fit: contain"
+                    class="img_size blog2__smll_img"
                   />
                 </div>
                 <div class="col-lg-9 col-md-8 col-sm-8 col-9 mx-auto mb-2">
@@ -3232,8 +3198,7 @@
                   <img
                     src="https://res.cloudinary.com/pigeon/image/upload/v1666499774/ice/3_llvelk.png"
                     alt=""
-                    class="blog2__smll_img"
-                    style="object-fit: contain"
+                    class="img_size blog2__smll_img"
                   />
                 </div>
                 <div class="col-lg-9 col-md-8 col-sm-8 col-9 mx-auto mb-2">
@@ -3264,6 +3229,286 @@
             <!-- ************************* -->
 
             <!-- ******************************************* -->
+            <br />
+            <div id="faq" class="">
+              <h2 class="fb-700 mt-3 mb-3">FAQ (Frequently Asked Questions)</h2>
+
+              <div id="mainfaq">
+                <div class="col-12 mx-auto">
+                  <div class="panel-group margin_0" id="accordion1">
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h4 class="panel-title">
+                          <a
+                            class="collapsed"
+                            data-toggle="collapse"
+                            data-parent="#accordion1"
+                            href="#collapse1"
+                          >
+                            <i class="rt-icon2-bubble highlight"></i>
+                            When is the best time to use teeth whitening strips?
+                          </a>
+                        </h4>
+                      </div>
+                      <div
+                        style="height: 0px"
+                        id="collapse1"
+                        class="panel-collapse collapse"
+                      >
+                        <div class="panel-body p-3">
+                          <p>
+                            For most cases, the best time to use whitening
+                            strips is the evening.
+                          </p>
+                          <p>
+                            Because you need to avoid consuming dark foods or
+                            beverages right after you use your whitening strips,
+                            it’s best to time it out after you’ll be consuming
+                            food and drink.
+                          </p>
+                          <p>
+                            This is because taking dark foods and beverages such
+                            as beets, wine, or coffee after whitening can
+                            actually create stains darker than what you had
+                            before the whitening strips.
+                          </p>
+                          <p>
+                            For most people, the ideal time is the evening or
+                            else after breakfast and coffee in the morning.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h4 class="panel-title">
+                          <a
+                            data-toggle="collapse"
+                            data-parent="#accordion1"
+                            href="#collapse2"
+                            class="collapsed"
+                          >
+                            <i class="rt-icon2-bubble highlight"></i>
+                            Which whitening strips do dentists recommend?
+                          </a>
+                        </h4>
+                      </div>
+                      <div
+                        style="height: 0px"
+                        id="collapse2"
+                        class="panel-collapse collapse"
+                      >
+                        <div class="panel-body p-3">
+                          <p>
+                            Dentists officially recommend Crest 3D Whitening
+                            Strips more than any other brand.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h4 class="panel-title">
+                          <a
+                            data-toggle="collapse"
+                            data-parent="#accordion1"
+                            href="#collapse3"
+                            class="collapsed"
+                          >
+                            <i class="rt-icon2-bubble highlight"></i>
+                            What are the best rated teeth whitening strips?
+                          </a>
+                        </h4>
+                      </div>
+                      <div
+                        style="height: 0px"
+                        id="collapse3"
+                        class="panel-collapse collapse"
+                      >
+                        <div class="panel-body">
+                          <p>
+                            If you analyze it by ‘stars’ received, combined with
+                            the number of reviewers on major platforms like
+                            Google Review and Amazon,
+                            <a href="https://amzn.to/3RULjMF" target="_blank"
+                              >Lumineux</a
+                            >
+                            has the best reviews (4.5 stars on both Google
+                            Reviews and Amazon).
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h4 class="panel-title">
+                          <a
+                            data-toggle="collapse"
+                            data-parent="#accordion1"
+                            href="#collapse4"
+                            class="collapsed"
+                          >
+                            <i class="rt-icon2-bubble highlight"></i>
+                            What is the best way to use teeth whitening strips?
+                          </a>
+                        </h4>
+                      </div>
+                      <div
+                        style="height: 0px"
+                        id="collapse4"
+                        class="panel-collapse collapse"
+                      >
+                        <div class="panel-body p-3">
+                          <p>
+                            Rather than sporadic, right-before-event usage, the
+                            best way to use whitening strips is consistently and
+                            by their directions.
+                          </p>
+                          <p>
+                            Popping one in a couple hours before a special
+                            occasion is okay; however, consistent, daily usage
+                            (following the suggested time / directions and until
+                            treatment is complete) will deliver the best,
+                            longest-lasting results.
+                          </p>
+
+                          <p>
+                            In addition, you’ll want to lightly brush your teeth
+                            with just a toothbrush and water 10 or so minutes
+                            before using your whitening strips. This will remove
+                            debris and plaque on your teeth and enable the
+                            whitening ingredients to more evenly apply to your
+                            teeth.
+                          </p>
+
+                          <p>
+                            You also should avoid consuming anything
+                            dark-colored for at least 12 hours after doing a
+                            whitening treatment.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h4 class="panel-title">
+                          <a
+                            data-toggle="collapse"
+                            data-parent="#accordion1"
+                            href="#collapse5"
+                            class="collapsed"
+                          >
+                            <i class="rt-icon2-bubble highlight"></i>
+                            What are the best teeth whitening strips for
+                            sensitive teeth?
+                          </a>
+                        </h4>
+                      </div>
+                      <div
+                        style="height: 0px"
+                        id="collapse5"
+                        class="panel-collapse collapse"
+                      >
+                        <div class="panel-body p-3">
+                          <p>
+                            For sensitive teeth, you’ll want whitening strips
+                            specially-designed for them and that are
+                            naturally-based.
+                          </p>
+                          <p>
+                            Because of their natural formulas,
+                            <a href="https://amzn.to/3g2BXB2" target="_blank"
+                              >Zimba</a
+                            >
+                            (natural with hydrogen peroxide) and
+                            <a href="https://amzn.to/3RULjMF" target="_blank"
+                              >Lumineux</a
+                            >
+                            (vegan, natural, and hydrogen peroxide-free) are
+                            ideal for sensitive smiles.
+                          </p>
+                          <p>
+                            Can I brush my teeth after using whitening strips?
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h4 class="panel-title">
+                          <a
+                            data-toggle="collapse"
+                            data-parent="#accordion1"
+                            href="#collapse6"
+                            class="collapsed"
+                          >
+                            <i class="rt-icon2-bubble highlight"></i>
+                            Can I brush my teeth after using whitening strips?
+                          </a>
+                        </h4>
+                      </div>
+                      <div
+                        style="height: 0px"
+                        id="collapse6"
+                        class="panel-collapse collapse"
+                      >
+                        <div class="panel-body p-3">
+                          <p>
+                            This question largely depends on the instructions
+                            and suggestions of the brand you use. In general,
+                            while it’s typically ‘okay,’ it’s best to follow the
+                            advice of your whitening strip.
+                          </p>
+                          <p>
+                            You could end up taking off the serum too early
+                            and/or irritating your gums!
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h4 class="panel-title">
+                          <a
+                            data-toggle="collapse"
+                            data-parent="#accordion1"
+                            href="#collapse7"
+                            class="collapsed"
+                          >
+                            <i class="rt-icon2-bubble highlight"></i>
+                            Are Whitening Strips Better to Use in the Morning or
+                            At Night?
+                          </a>
+                        </h4>
+                      </div>
+                      <div
+                        style="height: 0px"
+                        id="collapse7"
+                        class="panel-collapse collapse"
+                      >
+                        <div class="panel-body p-3">
+                          <p>
+                            Since it’s recommended to not eat (or at least not
+                            eat colorful foods and beverages) afterwards, the
+                            evening after your last meal of the day is ideal.
+                          </p>
+                          <p>
+                            However, take caution when using them at night. If
+                            you fall asleep and accidentally wear them
+                            overnight. This can be dangerous to your gums,
+                            enamel, and general health.
+                          </p>
+                          <p>
+                            (WARNING— Don’t fall asleep with your whitening
+                            strip on!)
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
 
             <div>
               <hr />
