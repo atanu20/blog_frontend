@@ -62,6 +62,7 @@
         line-height: 24px;
         /* font-size: 16px; */
         color: #000000;
+        margin-bottom: 15px !important;
       }
       ::-webkit-scrollbar {
         width: 5px;
@@ -75,9 +76,11 @@
       }
       .dis__cla {
         line-height: 21px !important;
+        font-style: italic;
+        margin-bottom: 30px !important;
       }
       h2 {
-        margin-top: 24px;
+        margin-top: 24px !important;
       }
       :root {
         --blue-color: #0074df;
@@ -91,49 +94,53 @@
         color: var(--blue-color) !important;
       }
       .bg-green {
-        background-color: var(--green-color);
+        background-color: var(--green-color) !important;
         /* padding: 20px; */
       }
       .bg-red {
-        background-color: var(--red-color);
+        background-color: var(--red-color) !important;
         /* padding: 20px; */
       }
       .fb-500 {
-        font-weight: 500;
+        font-weight: 500 !important;
       }
       .fb-600 {
-        font-weight: 600;
+        font-weight: 600 !important;
       }
       .fb-700 {
-        font-weight: 700;
+        font-weight: 700 !important;
       }
       .fn-10 {
-        font-size: 10px;
+        font-size: 10px !important;
       }
       .fn-12 {
-        font-size: 12px;
+        font-size: 12px !important;
       }
       .fn-14 {
-        font-size: 14px;
+        font-size: 14px !important;
       }
       .fn-18 {
-        font-size: 18px;
+        font-size: 18px !important;
       }
       .fn-28 {
-        font-size: 28px;
+        font-size: 28px !important;
       }
       tr:nth-child(even) {
-        background-color: #f4f4f4 !important;
+        background-color: #f4f4f4 !important ;
       }
       .card {
-        border: none;
-        border-radius: 0;
-        box-shadow: 0px 9px 29px rgba(0, 0, 0, 0.13);
-        border-radius: 19px;
+        border: none !important;
+        border-radius: 0 !important;
+        box-shadow: 0px 9px 29px rgba(0, 0, 0, 0.13) !important;
+        border-radius: 19px !important;
       }
       .tb1 {
         background-color: var(--light-blue);
         color: var(--blue-color);
+      }
+      .tb2 {
+        background-color: var(--light-blue);
+        color: black;
       }
       .slider__blog1 {
         width: 100%;
@@ -144,13 +151,25 @@
         background-size: cover;
         background-repeat: no-repeat;
       }
+      .card_width {
+        width: 300px;
+        height: auto;
+        /* margin: 20px 5px; */
+        display: block;
+        margin: 20px auto;
+        display: none;
+      }
+      .product_card {
+        display: block;
+      }
 
       .container__box {
-        width: 90%;
-        margin: 0 auto;
+        margin: 0 20px;
       }
       .wrapper__box {
-        width: 90%;
+        width: 100%;
+        display: block;
+        margin: auto;
       }
       .blog__box {
         margin-top: 30px;
@@ -158,8 +177,8 @@
         display: flex;
       }
       .blog__content__left {
-        width: 70%;
-        /* background-color: #0074DF; */
+        width: 100%;
+        /* background-color: #0074df; */
         padding: 10px;
       }
       .blog__content__right {
@@ -169,9 +188,10 @@
         height: 500px;
         position: sticky !important;
         top: 50px;
+        display: none;
       }
       .mobile_view {
-        display: none;
+        display: block;
       }
       .blog__content__right ul,
       .mobile_view ul {
@@ -190,7 +210,7 @@
       }
       .blog__content__right ul li a,
       .mobile_view ul li a {
-        color: #000000;
+        /* color: #000000; */
       }
 
       .blog__content__left .date__text {
@@ -219,11 +239,23 @@
       }
       .mleft {
         margin-left: 29px !important;
+        font-size: 14px;
+      }
+      .img1 {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        object-fit: cover;
       }
 
       .img2 {
         position: absolute;
         right: -25px !important;
+        top: 2px !important;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        object-fit: cover;
         /* z-index: -1; */
       }
       .imgtables tr td {
@@ -304,6 +336,20 @@
         height: 40px;
         width: 70px;
       }
+      button {
+        background-color: transparent !important;
+        border-radius: 0 !important;
+        outline: none !important;
+        box-shadow: none !important;
+      }
+      .btn-outline-sque-2 {
+        border-radius: 0;
+        margin: 2px;
+        border: 2px solid var(--blue-color);
+
+        width: 120px;
+      }
+
       .btn-sque:hover {
         color: white;
       }
@@ -353,6 +399,10 @@
         object-fit: contain;
       }
 
+      .desk_m {
+        clear: both;
+      }
+
       @media (max-width: 1040px) {
         .blog__content__left .head_text {
           font-size: 55px;
@@ -391,16 +441,28 @@
           width: 95%;
         }
       }
+      @media (max-width: 550px) {
+        .head_text {
+          font-size: 35px !important;
+        }
+      }
 
       @media (max-width: 500px) {
-        .imgfloat img {
+        .font_sm {
+          font-size: 30px !important;
+        }
+        .imgfloat .floatbox {
           width: 100%;
           clear: both;
         }
-
-        .head_text {
-          font-size: 40px !important;
+        .imgfloat img {
+          width: 100%;
+          margin-left: -10px !important;
         }
+
+        /* .head_text {
+          font-size: 40px !important;
+        } */
         .blog__content__right {
           height: auto;
           margin-bottom: 20px;
@@ -420,7 +482,7 @@
       }
 
       .panel {
-        padding: 10px;
+        /* padding: 10px; */
         box-shadow: 0 2px 5px 0 rgba(110, 130, 218, 0.18);
       }
 
@@ -446,9 +508,9 @@
 
       .panel-heading .panel-title > a::after {
         bottom: 0;
-        content: '▲';
+        content: '-';
         font-family: 'Roboto', sans-serif;
-        font-size: 14px;
+        font-size: 24px !important;
         font-weight: 300;
         letter-spacing: -1px;
         line-height: 48px;
@@ -459,7 +521,7 @@
         width: 33px;
       }
       .panel-heading .panel-title > a.collapsed::after {
-        content: '▼';
+        content: '+';
       }
       .panel-body {
         height: auto;
@@ -475,7 +537,13 @@
         line-height: 1.5;
       }
 
-      /* ; */
+      #load__more__menu {
+        display: none;
+      }
+      #hide_id {
+        display: none;
+      }
+
       /* ; */
     </style>
   </head>
@@ -499,25 +567,27 @@
               <div class="written_left">
                 <div class="written_left__img">
                   <img
-                    src="https://res.cloudinary.com/pigeon/image/upload/v1666465882/blog/Ellipse_1_yqryqh.png"
+                    src="https://res.cloudinary.com/pigeon/image/upload/v1666465883/blog/Ellipse_3_bdf6it.png"
                     alt=""
                     class="img1"
                   />
                   <img
-                    src="https://res.cloudinary.com/pigeon/image/upload/v1666465883/blog/Ellipse_2_cywi5q.png"
+                    src="https://res.cloudinary.com/pigeon/image/upload/v1666689749/blog/IMG-20221025-WA0008_egyotg.jpg"
                     alt=""
                     class="img2"
                   />
                 </div>
                 <div class="m-0 mleft fb-600">
-                  Written by <span class="text-primary">John Doe</span> <br />
-                  Medically Reviewed by <span class="text-primary">Alex</span>
+                  Written by <span class="text-primary">Kat Hillman</span>
+                  <br />
+                  Medically Reviewed by
+                  <span class="text-primary">Erica Anand</span>
                 </div>
               </div>
               <div class="written_right">
                 <p class="m-0 fb-600">
-                  <i class="fa fa-check-circle-o text-primary"></i> 7 sources
-                  cited
+                  <i class="fa fa-check-circle-o text-primary fn-14"></i> 7
+                  sources cited
                 </p>
               </div>
             </div>
@@ -536,49 +606,63 @@
               </p>
             </div>
 
-            <div class="mobile_view">
+            <!-- <div class="mobile_view">
               <ul class="pl-2">
-                <li>In this Article</li>
-                <li><a href="#introduction">Introduction</a></li>
-                <li>
+                <li class="mb-3"><b>In this Article</b></li>
+                <li class="menu__link_a">
+                  <a href="#introduction">Introduction</a>
+                </li>
+                <li class="menu__link_a">
                   <a href="#whywhitening">Why Whitening Your Teeth Matters</a>
                 </li>
-                <li>
+                <li class="menu__link_a">
                   <a href="#benefitsofwhitening"
                     >Benefits of Whitening Strips</a
                   >
                 </li>
-                <li>
-                  <a href="#top4whiteningstrips"
-                    >How We Chose Our Top 4 Whitening Strips</a
-                  >
-                </li>
-                <li><a href="#magicstrips">#1 Snow’s “Magic Strips”</a></li>
-                <li><a href="#3Dwhitestrips"> #2 Crest 3D Whitestrips</a></li>
-                <li>
-                  <a href="#zimbateeth">#3 Zimba Teeth Whitening Strips</a>
-                </li>
-                <li>
-                  <a href="#lumineuxcertified"
-                    >#4 Lumineux Certified Non-Toxic Strips</a
-                  >
-                </li>
-                <li>
-                  <a href="#recommendedkits"
-                    >Bonus: Our Top 2 Recommended Kits</a
-                  >
-                </li>
-                <li>
-                  <a href="#successfullywhitenteeth"
-                    >How to Successfully Whiten Teeth</a
-                  >
-                </li>
-                <li><a href="#faq">FAQs</a></li>
-                <li><a href="#conclusion">Conclusion</a></li>
+                id="load__more__menu" 
+                <div class="content_b">
+                  <li class="menu__link_a">
+                    <a href="#top4whiteningstrips"
+                      >How We Chose Our Top 4 Whitening Strips</a
+                    >
+                  </li>
+                  <li class="menu__link_a">
+                    <a href="#magicstrips">#1 Snow’s “Magic Strips”</a>
+                  </li>
+                  <li class="menu__link_a">
+                    <a href="#3Dwhitestrips"> #2 Crest 3D Whitestrips</a>
+                  </li>
+                  <li class="menu__link_a">
+                    <a href="#zimbateeth">#3 Zimba Teeth Whitening Strips</a>
+                  </li>
+                  <li class="menu__link_a">
+                    <a href="#lumineuxcertified"
+                      >#4 Lumineux Certified Non-Toxic Strips</a
+                    >
+                  </li>
+                  <li class="menu__link_a">
+                    <a href="#recommendedkits"
+                      >Bonus: Our Top 2 Recommended Kits</a
+                    >
+                  </li>
+                  <li class="menu__link_a">
+                    <a href="#successfullywhitenteeth"
+                      >How to Successfully Whiten Teeth</a
+                    >
+                  </li>
+                  <li class="menu__link_a"><a href="#faq">FAQs</a></li>
+                  <li class="menu__link_a">
+                    <a href="#conclusion">Conclusion</a>
+                  </li>
 
-                <li><a href="#author">Author Bio</a></li>
+                  <li class="menu__link_a">
+                    <a href="#author">Author Bio</a>
+                  </li>
+                </div>
               </ul>
-            </div>
+              
+            </div> -->
 
             <div class="content__box fn-18">
               <div>
@@ -813,7 +897,7 @@
               </div>
               <!-- ***** -->
               <div class="" id="whywhitening" class="pt-2">
-                <h2 class="fb-700">
+                <h2 class="fb-700 font_sm">
                   <img
                     src="https://res.cloudinary.com/pigeon/image/upload/v1666465883/blog/idea_ojslrj.png"
                     alt=""
@@ -836,60 +920,64 @@
                     >
                   </div>
 
-                  <p>
-                    Featured in the
-                    <span class="text-primary">
-                      <a
-                        href="https://www.dailymail.co.uk/femail/article-2307430/White-teeth-make-look-younger-employable-Holly-Willoughby-envied-smile-say-dentists.html"
-                        target="_blank"
-                        >Daily Mail UK</a
-                      > </span
-                    >, Oral B made a study about smiles and how they impact our
-                    lives. Apparently, teeth impact not just how young and
-                    attractive we look— but how much money and education others
-                    believe we have.
-                  </p>
-                  <p>
-                    According to dentists, stained natural teeth can ruin
-                    opportunities— and even our quality of life. Here’s what
-                    cosmetic dentist
-                    <span class="text-primary">
-                      <a
-                        href="https://www.torrensdental.com/contact/"
-                        target="_blank"
-                        >Dr. Torrens,</a
-                      >
-                    </span>
-                    says about it:
-                  </p>
-                  <p>
-                    “[It’s] perhaps the first ever feature [people] notice about
-                    us….A crucial role in forming that positive first
-                    impression. Those who are not satisfied with the appearance
-                    of their smile may not be enjoying life to its fullest.”
-                    <span class="text-primary">
-                      <a href="http://torrensdental.com" target="_blank"
-                        >(Torrensdental.com)</a
-                      >
-                    </span>
-                    Ouch!
-                  </p>
+                  <div class="">
+                    <p>
+                      Featured in the
+                      <span class="text-primary">
+                        <a
+                          href="https://www.dailymail.co.uk/femail/article-2307430/White-teeth-make-look-younger-employable-Holly-Willoughby-envied-smile-say-dentists.html"
+                          target="_blank"
+                          >Daily Mail UK</a
+                        > </span
+                      >, Oral B made a study about smiles and how they impact
+                      our lives. Apparently, teeth impact not just how young and
+                      attractive we look— but how much money and education
+                      others believe we have.
+                    </p>
+                    <p>
+                      According to dentists, stained natural teeth can ruin
+                      opportunities— and even our quality of life. Here’s what
+                      cosmetic dentist
+                      <span class="text-primary">
+                        <a
+                          href="https://www.torrensdental.com/contact/"
+                          target="_blank"
+                          >Dr. Torrens,</a
+                        >
+                      </span>
+                      says about it:
+                    </p>
+                    <p>
+                      “[It’s] perhaps the first ever feature [people] notice
+                      about us….A crucial role in forming that positive first
+                      impression. Those who are not satisfied with the
+                      appearance of their smile may not be enjoying life to its
+                      fullest.”
+                      <span class="text-primary">
+                        <a href="http://torrensdental.com" target="_blank"
+                          >(Torrensdental.com)</a
+                        >
+                      </span>
+                      Ouch!
+                    </p>
 
-                  <p>
-                    Look at the positive side: This “first impression” is
-                    something we can brighten. By whitening our teeth, we can
-                    take years off our appearance and have more confidence in
-                    social situations (interviews, sales, dates, and more).
-                  </p>
+                    <p>
+                      Look at the positive side: This “first impression” is
+                      something we can brighten. By whitening our teeth, we can
+                      take years off our appearance and have more confidence in
+                      social situations (interviews, sales, dates, and more).
+                    </p>
+                  </div>
                 </div>
               </div>
-              <div id="benefitsofwhitening" class="pt-2">
-                <h2 class="fb-700">
+
+              <div id="benefitsofwhitening" class="pt-2 desk_m">
+                <h2 class="fb-700 font_sm">
                   <img
                     src="https://res.cloudinary.com/pigeon/image/upload/v1666465886/blog/thumb_dnhkfu.png"
                     alt=""
                   />
-                  In Contrast to Other Whitening Methods
+                  Benefits of Whitening Methods
                 </h2>
                 <h5 class="mt-2 fn-28">
                   In Contrast to Other Whitening Methods
@@ -1349,7 +1437,7 @@
                   just the time it takes for the strips to dissolve.
                 </p>
 
-                <div class="row">
+                <div class="row" style="margin-bottom: 25px; margin-top: 15px">
                   <div class="col-sm-10 col-12 mx-auto">
                     <div class="card p-5">
                       <div class="row">
@@ -1390,7 +1478,6 @@
                                 class="btn btn-sque"
                                 >Buy Now</a
                               >
-                              <a href="" class="btn btn-outline-sque">Share</a>
                             </div>
                           </div>
                         </div>
@@ -1398,7 +1485,7 @@
                     </div>
                   </div>
                 </div>
-                <br />
+
                 <div class="bg-green p-3">
                   <h5 class="fb-600">
                     <i class="fa fa-check-circle text-success"></i> Why These
@@ -1426,7 +1513,7 @@
                     <li>99.3% customer rating</li>
                   </ul>
                 </div>
-                <div class="p-3 bg-red">
+                <div class="p-3 bg-red" style="margin-bottom: 25px">
                   <h5 class="fb-600">
                     <i class="fa fa-times-circle text-danger"></i> The Only
                     Drawbacks to “The Magic Strips”:
@@ -1435,7 +1522,7 @@
                     <li>Can’t swallow excess saliva during process</li>
                   </ul>
                 </div>
-                <br />
+
                 <p>
                   Users rave about Snow’s amazing taste, too. While most dental
                   products have boring ole plain mint, peppermint, or cinnamon
@@ -1499,16 +1586,7 @@
                 <p>
                   *We recommend consulting your dental professional for use.
                 </p>
-                <p>
-                  With wide and inclusive selections, Snow takes care of just
-                  about everyone— from those with tooth sensitivity, deep /
-                  intrinsic stains, to sophisticated pallets.
-                </p>
-                <p>
-                  Their high quality comes with the luxury price; however, their
-                  site has frequent deals for saving money on these (up to 25%
-                  for 6-times-a-year subscriptions).
-                </p>
+
                 <div class="imgfloat">
                   <div class="floatbox">
                     <img
@@ -1523,7 +1601,16 @@
                       </a></small
                     >
                   </div>
-
+                  <p>
+                    With wide and inclusive selections, Snow takes care of just
+                    about everyone— from those with tooth sensitivity, deep /
+                    intrinsic stains, to sophisticated pallets.
+                  </p>
+                  <p>
+                    Their high quality comes with the luxury price; however,
+                    their site has frequent deals for saving money on these (up
+                    to 25% for 6-times-a-year subscriptions).
+                  </p>
                   <p>
                     You’ll also notice that they have entire lines of whitening
                     products and kits that compliment their whitening power. You
@@ -1542,7 +1629,7 @@
                 </div>
               </div>
               <br />
-              <div id="3Dwhitestrips" class="pt-2">
+              <div id="3Dwhitestrips" class="pt-2 desk_m">
                 <h2 class="fb-700">
                   #2
                   <span class="text-primary">
@@ -1553,7 +1640,7 @@
                   </span>
                 </h2>
                 <h5>- Best Online Deal</h5>
-                <div class="row">
+                <div class="row" style="margin-bottom: 25px; margin-top: 15px">
                   <div class="col-sm-10 col-12 mx-auto">
                     <div class="card p-5">
                       <div class="row">
@@ -1595,7 +1682,6 @@
                                 class="btn btn-sque"
                                 >Buy Now</a
                               >
-                              <a href="" class="btn btn-outline-sque">Share</a>
                             </div>
                           </div>
                         </div>
@@ -1634,7 +1720,7 @@
                     <li>#1 Dentist recommended</li>
                   </ul>
                 </div>
-                <div class="p-3 bg-red">
+                <div class="p-3 bg-red" style="margin-bottom: 25px">
                   <h5 class="fb-600">
                     <i class="fa fa-times-circle text-danger"></i> The Only
                     Drawbacks of Crest 3D Whitestrips Professional Effects:
@@ -1715,7 +1801,7 @@
                   </span>
                 </h2>
                 <h5>- a Natural, Vegan-Friendly Bargain on Amazon</h5>
-                <div class="row">
+                <div class="row" style="margin-bottom: 25px; margin-top: 15px">
                   <div class="col-sm-10 col-12 mx-auto">
                     <div class="card p-5">
                       <div class="row">
@@ -1755,7 +1841,6 @@
                                 class="btn btn-sque"
                                 >Buy Now</a
                               >
-                              <a href="" class="btn btn-outline-sque">Share</a>
                             </div>
                           </div>
                         </div>
@@ -1786,7 +1871,7 @@
                     </li>
                   </ul>
                 </div>
-                <div class="p-3 bg-red">
+                <div class="p-3 bg-red" style="margin-bottom: 25px">
                   <h5 class="fb-600">
                     <i class="fa fa-times-circle text-danger"></i> Here are the
                     Only Drawbacks of Zimba:
@@ -1867,7 +1952,7 @@
                   </span>
                 </h2>
                 <h5>- Luxury You Can Afford Via Amazon</h5>
-                <div class="row">
+                <div class="row" style="margin-bottom: 25px; margin-top: 15px">
                   <div class="col-sm-10 col-12 mx-auto">
                     <div class="card p-5">
                       <div class="row">
@@ -1906,7 +1991,6 @@
                                 class="btn btn-sque"
                                 >Buy Now</a
                               >
-                              <a href="" class="btn btn-outline-sque">Share</a>
                             </div>
                           </div>
                         </div>
@@ -1941,7 +2025,7 @@
                     </li>
                   </ul>
                 </div>
-                <div class="p-3 bg-red">
+                <div class="p-3 bg-red" style="margin-bottom: 25px">
                   <h5 class="fb-600">
                     <i class="fa fa-times-circle text-danger"></i> Why They’re
                     Not 100% Perfect:
@@ -1998,7 +2082,11 @@
 
               <div id="recommendedkits" class="pt-2">
                 <h2 class="fb-700">
-                  🎁 Bonus: Our Top 2 Best Teeth Whitening Kits
+                  <img
+                    src="https://res.cloudinary.com/pigeon/image/upload/v1666671755/blog/screenshot-127.0.0.1_5500-2022.10.25-09_50_27_ze6l1z.png"
+                    alt=""
+                  />
+                  Bonus: Our Top 2 Best Teeth Whitening Kits
                 </h2>
                 <p>
                   While this is a list for whitening strips, we’ll be honest and
@@ -2075,7 +2163,6 @@
                               class="btn btn-sque"
                               >Buy Now</a
                             >
-                            <a href="" class="btn btn-outline-sque">Share</a>
                           </div>
                         </div>
                       </div>
@@ -2154,7 +2241,6 @@
                               class="btn btn-sque"
                               >Buy Now</a
                             >
-                            <a href="" class="btn btn-outline-sque">Share</a>
                           </div>
                         </div>
                       </div>
@@ -2671,8 +2757,6 @@
                     </div>
                   </div>
                 </div>
-
-                <hr />
               </div>
 
               <div id="conclusion" class="pt-2">
@@ -2816,8 +2900,45 @@
                     </p>
                   </div>
                 </div>
+                <hr />
+                <div class="row pt-2">
+                  <div class="col-lg-4 col-md-12 mx-auto mb-2">
+                    <img
+                      src="https://res.cloudinary.com/pigeon/image/upload/v1666689749/blog/IMG-20221025-WA0008_egyotg.jpg"
+                      alt=""
+                      class="roungbig"
+                    />
+                    <img
+                      src="https://res.cloudinary.com/pigeon/image/upload/v1666465885/blog/Linkedin-Logo_cfp6fh.png"
+                      alt=""
+                      class="linkedinimg"
+                    />
+                  </div>
+                  <div class="col-lg-8 col-md-12 mx-auto mb-2">
+                    <p>Medical Reviewer</p>
+                    <h3 class="fb-700">Erica Anand</h3>
+                    <p>
+                      Erica Anand, DDS, is a licensed dental specialist with
+                      experience in personalized dental content writing and
+                      blogging for corporate publications. She is skilled at
+                      developing and editing dental health–related content,
+                      creating product reviews, and producing high-quality oral
+                      health materials for several marketing firms. Dr. Anand
+                      has over five years of experience with dental marketing
+                      firms, and her passion for writing has led her to do
+                      part-time consulting in the dental health and technology
+                      fields.
+                      <span class="text-primary">
+                        <a
+                          href="https://www.linkedin.com/in/kat-hillman-3b7a9a21a?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BIZ%2FPLzSNREm7I7dQWhhKQQ%3D%3D"
+                          target="_blank"
+                          >LinkedIn</a
+                        > </span
+                      >.
+                    </p>
+                  </div>
+                </div>
               </div>
-              <hr />
 
               <!-- ------- -->
             </div>
@@ -2862,7 +2983,18 @@
         </div>
       </div>
     </div>
-
+    <!-- <script>
+      const show = () => {
+        document.getElementById('show_id').style.display = 'none';
+        document.getElementById('hide_id').style.display = 'block';
+        document.getElementById('load__more__menu').style.display = 'block';
+      };
+      const hide = () => {
+        document.getElementById('hide_id').style.display = 'none';
+        document.getElementById('show_id').style.display = 'block';
+        document.getElementById('load__more__menu').style.display = 'none';
+      };
+    </script> -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
